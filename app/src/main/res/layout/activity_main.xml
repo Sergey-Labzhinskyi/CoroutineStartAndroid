@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lesson 8 ------------------------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Run"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bntRun"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL8" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 9 Builders------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRunNotWaitChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="RunNotWaitChild"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRunWaitUntilChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="RunWaitUntilChild"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntRunNotWaitChild" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntParallelRanTwoCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ParallelRanTwoCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bntRunNotWaitChild"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntCreateCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="CreateCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntRunWaitUntilChild"
+            app:layout_constraintTop_toBottomOf="@+id/bntParallelRanTwoCoroutine" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntStartCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="StartCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntCreateCoroutine"
+            app:layout_constraintTop_toBottomOf="@+id/bntParallelRanTwoCoroutine" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntAsyncStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="AsyncStart"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntRunWaitUntilChild" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntAsyncParallel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="AsyncParallel"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntAsyncStart"
+            app:layout_constraintTop_toBottomOf="@+id/bntRunWaitUntilChild" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 10 Context -------------------------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntAsyncStart" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRunContext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="RunContext"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntNestedCoroutines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="NestedCoroutines"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntRunContext"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 11 Dispatchers ------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntRunContext" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntDefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="TestDefault"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="TestIO"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntDefault"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="TestMain"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntIO"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntMainImmediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="TestMainImmediate"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntDefault" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 12 Parent and child coroutines ------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntMainImmediate" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntParentChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ParentChild"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL12" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 13 Exception --------------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntParentChild" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntThrowException"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ThrowException"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntHandleExceptionCancelChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="HandleExceptionCancelChildCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntThrowException"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntHandleExceptionNotCancelChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="HandleExceptionNotCancelChildCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntThrowException" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 14 Exception Nested Coroutines-----------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntHandleExceptionNotCancelChild" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntThrowExceptionChildCoroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ThrowExceptionChildCoroutine"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL14" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 15 Exception Async, Suspend --------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntThrowExceptionChildCoroutine" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntThrowExceptionAsync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ThrowExceptionAsync"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL15" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntThrowExceptionSuspend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ThrowExceptionSuspend"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntThrowExceptionAsync"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL15" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 18 Channel ------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntThrowExceptionAsync" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntChannelSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ChannelSend"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL18" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntChannelReceive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="ChannelReceive"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntChannelSend"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL18" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 20 Flow ------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntChannelSend" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntStartFlow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="StartFlow"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL20" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 22 Flow Exception------------------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntStartFlow" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntCatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Catch"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL22" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRetry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Retry"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntCatch"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL22" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntRetryWhen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="RetryWhen"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@+id/bntRetry"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL22" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHeaderL23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lesson 23 Практика. Scope, LiveData------------------------------------"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntRetryWhen" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntLaunchCoroutineVM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Launch Coroutine from ViewModel"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeaderL23" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntLaunchCoroutineLifecycleScope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Launch Coroutine from LifecycleScope"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bntLaunchCoroutineVM" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
